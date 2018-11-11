@@ -7,7 +7,7 @@ tags:
 - video
 
 ---
-<iframe width="560" height="315" src="//www.youtube.com/embed/SU3kYxJmWuQ" frameborder="0"></iframe>
+<iframe width="560" height="315" src="//youtu.be/9UkYhRXf5cg" frameborder="0"></iframe>
 
 Відео на сайті - це потрібна річ, таки так [FitVids](http://fitvidsjs.com/).
 

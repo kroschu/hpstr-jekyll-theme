@@ -8,3 +8,4 @@ gem "jekyll-paginate"
 gem "jekyll-gist"
 gem "jekyll-admin"
 gem 'jekyll-compose', group: [:jekyll_plugins]
+gem "amp-jekyll"

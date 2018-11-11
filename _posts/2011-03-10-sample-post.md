@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sample Post
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+title: Cинтаксис Markdown
+description: "Для роботи з сервісами, що я пропоную використовувати як інструменти колективної роботи над проектами з оптимізації урравління виробнисими ррцесами, необхідним є оозуміння мови розмітки документів Markdown."
 modified: 2014-12-24
 tags: [sample post]
 image:
@@ -11,52 +11,89 @@ image:
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+Якщо коротко, то Markdown - це проста мова розмітки текстів, який дозволяє створювати фактично повністю оформлену веб-публікацію одночасно з написанням самого матеріалу. «Оформлену» - це означає з гіперпосиланнями, виділенням тексту в потрібних місцях (жирний або курсив), цитатами і списками. У більшості випадків цього досить, а для хардкорних блогерів є ще й розширена версія Markdown з підтримкою таблиць та інших хитрих штук. Але тут вже потрібен особливий софт і подібна функціональність буде потрібно швидше могутнім фахівцям, ніж «простим смертним». В такі нетрі лізти не будемо.
 
-# Heading 1
+Формат файлу - звичайний текст, він же TXT. Деякі редактори ще присвоюють розширення «.md», але це лише для зручності та асоціації такого контенту з певним додатком до OS X (Windows, можливо, теж, але в цій ОС справ з MD-редакторами не мав, так що гадати не буду). Наприклад, так робить iA Writer, хоча всередині хитрого файлу з розширенням «.md» все той же звичайний неформатований текст.
 
-## Heading 2
+Ідея ж Markdown полягає в наборі простих команд або позначень, які MD-конвертер зможе перетворити у стандартний HTML-код. Простий приклад такого позначення - це виділення тексту зірочками:
 
-### Heading 3
+``  *курсив* `` - конвертер перетворює такий текст *курсив*
+`` **жирний** `` - а такий текст буде перетворений в **жирний**
 
-#### Heading 4
+А ось так він виглядає у форматі HTML, у який перетворюється Markdown-конвертером. Саме в такому вигляді матеріал додається в адмінку (в режимі HTML-редактора, звичайно ж, забудьте про візуальному редакторі - він живе своїм особливим життям):
 
-##### Heading 5
+`` <em>текст</em>  <strong>текст</strong>``
 
-###### Heading 6
+Таким чином, у Markdown можна писати в принципі в будь-якому текстовому редакторі, навіть в самому простому, той же TextEdit. Але в спеціалізованому все ж зручніше з цілого ряду причин, починаючи від вбудованого конвертера і режиму попереднього перегляду результату і закінчуючи автоматизацією введення потрібних команд.
 
-### Body text
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
-![Smithsonian Image]({{ site.url }}/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
+#### Заголовки:
 
-*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times <cite>(That’s a citation)</cite>. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+```
+# Заголовок 1
+## Заголовок 2  
+### Заголовок 3 
+```
 
-HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+Результат:
 
-### Blockquotes
+# Заголовок 1
+## Заголовок 2
+### Заголовок 3
 
-> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+Перед заголовком ставите ґрати, за нею пробіл і далі за аналогією.
 
-## List Types
+#### Списки:
 
-### Ordered Lists
+```
+* Markdown це добре 
+* Markdown дуже крутий 
+* Markdown треба знати 
+```
 
-1. Item one
-   1. sub item one
-   2. sub item two
-   3. sub item three
-2. Item two
+Результат:
 
-### Unordered Lists
+* Markdown це добре
+* Markdown дуже крутий
+* Markdown треба знати
 
-* Item one
-* Item two
-* Item three
+Тут є важливий нюанс - щоб конвертер вірно зрозумів команду, над списком повинна бути порожній рядок, а після зірочки - пробіл. Також можна створювати і нумеровані списки, але тоді замість зірочки ставиться цифра з комою, а після - пробіл. Для того, щоб створити вкладений список усередині основного списку, треба під потрібним пунктом вставити порожній рядок, після чого один клік на «Tab» і далі за аналогією - зірочка→пробіл→пункт списку.
 
-## Tables
+#### Цитати
+
+``` 
+> Цитата 
+
+>> Вкладена цитата 
+ ```
+
+Результат:
+
+> Цитата
+
+>> Вкладена цитата
+
+Всередині цитати можна додавати заголовки, списки і т. п. В HTML за додавання цитат відповідає команда `` <blockquote> ``, у неї й перетворюється поставлений перед текстом символ «>»
+
+Також можна ще додавати зображення, будувати таблиці
+
+#### Таблиці
+
+```
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+{: rules="groups"}
+```
+
+Результат:
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -69,9 +106,9 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 | Foot1   | Foot2   | Foot3
 {: rules="groups"}
 
-## Code Snippets
+#### Вставки програмного коду
 
-Syntax highlighting via Rouge
+З підсвіткою операторів:
 
 ```css
 #container {
@@ -81,22 +118,18 @@ Syntax highlighting via Rouge
 }
 ```
 
-Non Pygments code example
+
+```css
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
+```
+
+та без такої:
 
     <div id="awesome">
         <p>This is great isn't it?</p>
     </div>
 
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-```html
-<a href="#" class="btn btn-success">Success Button</a>
-```
-
-<div markdown="0"><a href="#" class="btn">Primary Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>

@@ -14,7 +14,7 @@
 
 {% if page.image.feature %}
 <div class="entry-header">
-  {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
+  {% if page.image.credit %}<div class="image-credit">Зображення додав: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
   <div class="entry-image">
     <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
   </div><!-- /.entry-image -->
@@ -37,7 +37,50 @@
     <div class="entry-content">
       {{ content }}
       <footer class="entry-meta">
-        {% if page.modified %}<span>Updated on <span class="entry-date date published updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
+        {% if page.modified %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Оновлено:" }}</strong>
+            <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">
+              {{ page.modified | date: "%-d" }}
+              {% assign month = page.modified | date: '%-m' %}
+              {% case month %}
+                {% when '1' %}січня
+                {% when '2' %}лютого
+                {% when '3' %}березня
+                {% when '4' %}квітня
+                {% when '5' %}травня
+                {% when '6' %}червня
+                {% when '7' %}липня
+                {% when '8' %}серпня
+                {% when '9' %}вересня
+                {% when '10' %}жовня
+                {% when '11' %}листопада
+                {% when '12' %}грудня
+              {% endcase %}
+              {{ page.modified | date: "%Y" }}
+            </time>
+          </p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Оновлено:" }}</strong>
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+              {{ page.date | date: "%-d" }}
+              {% assign month = page.date | date: '%-m' %}
+              {% case month %}
+                {% when '1' %}січня
+                {% when '2' %}лютого
+                {% when '3' %}березня
+                {% when '4' %}квітня
+                {% when '5' %}травня
+                {% when '6' %}червня
+                {% when '7' %}липня
+                {% when '8' %}серпня
+                {% when '9' %}вересня
+                {% when '10' %}жовтня
+                {% when '11' %}листопада
+                {% when '12' %}грудня
+              {% endcase %}
+              {{ page.date | date: "%Y" }}
+            </time>
+          </p>
         <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>{% endif %}
         {% if page.share != false %}{% include social-share.html %}{% endif %}
       </footer>

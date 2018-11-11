@@ -1,7 +1,7 @@
 # Menu navigation links
 
-- title: Theme Setup
-  url: /theme-setup/
+- title: Сервіси проекту (потрібна авторизація)
+  url: https://treba.tk
 
-- title: External Link
-  url: http://mademistakes.com
+- title: Бібліотека проекту
+  url: https://lib.treba.tk

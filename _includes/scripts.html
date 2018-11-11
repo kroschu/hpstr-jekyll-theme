@@ -17,3 +17,15 @@
 {% endif %}
 
 {% if page.comments != false %}{% include disqus_comments.html %}{% endif %}
+
+<div id="zadarmaScripts"></div>
+<script>
+(function() {
+  var script = document.createElement('script');
+  script.src = 'https://my.zadarma.com/callmewidget/v2.0.3/loader.js';
+  document.getElementById('zadarmaScripts').appendChild(script);
+  var script2 = document.createElement('script');
+  script2.src = 'https://my.zadarma.com/callmewidget/languages/v1/ua.js';
+  document.getElementById('zadarmaScripts').appendChild(script2);
+}());
+</script>

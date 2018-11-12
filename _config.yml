@@ -47,7 +47,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
-  - jekyll-admin
+
 
 
 sass:

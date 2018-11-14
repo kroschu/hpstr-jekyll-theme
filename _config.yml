@@ -47,7 +47,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
-
+  - jekyll-sitemap
 
 sass:
   sass_dir: _sass

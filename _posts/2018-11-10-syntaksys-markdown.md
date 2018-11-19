@@ -7,7 +7,7 @@ tags: [sample post]
 image:
   path: /images/abstract-3.jpg
   feature: abstract-3.jpg
-  credit: dargadgetz
+  credit: vokov
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
 

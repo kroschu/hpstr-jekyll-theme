@@ -54,3 +54,5 @@ fields:
   type: datetime
   hidden: false
   default: ''
+pages:
+- _posts/принцип-парето-в-управлінні-бізнес-процесами.md

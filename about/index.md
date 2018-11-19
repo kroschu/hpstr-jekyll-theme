@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Стратегічна мета проекту ТребаТак
+title: Мета проекту ТребаТак
 image:
   feature: abstract-5.jpg
   credit: vokov

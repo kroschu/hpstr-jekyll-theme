@@ -2,10 +2,10 @@
 layout: page
 title: Мета та програма проекту
 image:
-  feature: "/images/6952EA51-7B84-428C-BD49-895525BC5B45.jpeg"
+  feature: 6952EA51-7B84-428C-BD49-895525BC5B45.jpeg
   credit: vokov
   creditlink: https://let.treba.tk/
-  path: "/images/6952EA51-7B84-428C-BD49-895525BC5B45.jpeg"
+  path: /images/6952EA51-7B84-428C-BD49-895525BC5B45.jpeg
 comments: false
 modified: 2018-02-11 00:00:00 +0000
 

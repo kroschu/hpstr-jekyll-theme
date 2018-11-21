@@ -4,6 +4,7 @@ title: "Короткий опис BPMN з прикладом / Хабр"
 description: "Для того щоб розібратися, що таке BPMN, потрібно розуміти, що частина цієї абревіатури «BPM» має дві розшифровки - Business Process Modeling і Business Process Management."
 tags: [bpm, моделювання]
 modified: 2018-11-9
+comments: true
 image:
   path: /images/abstract-7.jpg
   feature: abstract-7.jpg

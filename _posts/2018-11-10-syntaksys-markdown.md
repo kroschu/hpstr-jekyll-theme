@@ -3,6 +3,7 @@ layout: post
 title: Cинтаксис Markdown
 description: "Для роботи з сервісами, що я пропоную використовувати як інструменти колективної роботи над проектами з оптимізації урравління виробнисими ррцесами, необхідним є оозуміння мови розмітки документів Markdown."
 modified: 2014-12-24
+comments: true
 tags: [sample post]
 image:
   path: /images/abstract-3.jpg

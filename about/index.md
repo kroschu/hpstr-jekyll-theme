@@ -6,7 +6,7 @@ image:
   credit: vokov
   creditlink: https://let.treba.tk/
   path: /images/ABDB6F70-816D-4B7F-A2FB-800DB3252E75.jpeg
-comments: false
+comments: true
 modified: 2018-02-11 00:00:00 +0000
 
 ---

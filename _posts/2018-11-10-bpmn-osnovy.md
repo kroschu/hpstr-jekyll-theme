@@ -8,7 +8,8 @@ comments: true
 image:
   path: /images/abstract-7.jpg
   feature: abstract-7.jpg
-  credit: vokov
+  credit: English
+
 ---
 
 # Короткий опис BPMN з прикладом / Хабр

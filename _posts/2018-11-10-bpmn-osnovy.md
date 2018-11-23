@@ -9,7 +9,7 @@ image:
   path: /images/abstract-7.jpg
   feature: abstract-7.jpg
   credit: English
-
+  creditlink: https://en-vokov.treba.tk/bpmn-osnovy/
 ---
 
 # Короткий опис BPMN з прикладом / Хабр

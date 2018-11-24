@@ -4,15 +4,25 @@ auto_deploy: true
 admin_path: "/adminfile"
 webhook_url: 
 sections:
-- type: document
-  path: _config.yml
-  label: Config
 - type: jekyll-pages
   label: Pages
   create: all
 - type: jekyll-posts
   label: Posts
   create: all
+- type: document
+  path: _config.yml
+  label: Config
+- type: document
+  path: Gemfile
+  label: Gemfile
+  match: "**/*"
+- type: directory
+  path: _layouts
+  label: Layouts
+  create: all
+  match: "**/*"
+  new_doc_ext: ".html"
 upload_dir: images
 public_path: "/images"
 front_matter_path: ''

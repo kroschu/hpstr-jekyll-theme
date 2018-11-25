@@ -40,7 +40,7 @@
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      {{ content }}
+      {{ content | toc }}
       <footer class="entry-meta">
         {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Оновлено:" }}</strong>

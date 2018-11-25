@@ -20,6 +20,8 @@ owner:
   tumblr: 
   google_plus: 
 background: 
+svg:
+  optimize: true
 webmaster_verifications:
   google: jSLDwBQBJe00Al-2gkR-sTDQdxaVPsI1o8AflDTxga8
   bing: 1234

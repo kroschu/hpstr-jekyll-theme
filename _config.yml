@@ -28,7 +28,7 @@ webmaster_verifications:
   alexa: 1234
   yandex: 60284d8f500077cd
   baidu: 1234
-google_analytics: 
+google_analytics: UA-129794561-1
 google_verify: 
 bing_verify: 
 timezone: Europe/Kiev

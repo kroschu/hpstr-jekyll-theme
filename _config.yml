@@ -34,6 +34,7 @@ future: false
 highlighter: rouge
 markdown: kramdown
 plugins:
+- jekyll-inline-svg
 - jekyll-toc
 - jekyll-sitemap
 - jekyll-paginate

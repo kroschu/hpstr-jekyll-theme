@@ -10,3 +10,4 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 gem "jekyll-seo-tag"
 gem "jekyll-toc"
 gem "jekyll-inline-svg", "~>0.0.1"
+gem "jekyll-minifier"

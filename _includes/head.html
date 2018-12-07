@@ -61,3 +61,8 @@
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/images/{{ background }}{% endcapture %}{% endunless %}
 <style type="text/css">body {background-image:url({{ background }});}</style>
 {% endif %}
+
+<!-- BEGIN SHAREAHOLIC CODE -->
+<link rel='preload' href='//apps.shareaholic.com/assets/pub/shareaholic.js' as='script' />
+<script type="text/javascript" data-cfasync="false" async src="//apps.shareaholic.com/assets/pub/shareaholic.js" data-shr-siteid="a52b9e4022f30f93a434919f4a273abd"></script>
+<!-- END SHAREAHOLIC CODE -->
